@@ -72,14 +72,20 @@
             var i = 0;
             function message(){
                 var out=document.getElementById("message");
-                var msg = "work in progress";
+                var msg =  "Hello! you can find me here.\n\t\t       ├github.\n\t\t       ├twitter.\n\t\t       ├twitch.\n\t\t       └instagram. \n\n\n   more is to come!";
             
                     if (i <= msg.length) {
                         out.innerHTML+=msg.charAt(i);
                         i++;
                         setTimeout(message, 70);
                     }else{
-                    document.getElementById("message").innerHTML = res;
+					var str = document.getElementById("message").innerHTML; 
+        			var res = str.replace("twitter", "<a href=\"https://twitter.com/paulstechnology\">twitter</a>");
+					var res = res.replace("twitch", "<a href=\"https://twitch.tv/pauls_tech\">twitch</a>");
+        			var res = res.replace("github", "<a href=\"https://github.com/pauls-tech\">github</a>");
+        			var res = res.replace("instagram", "<a href=\"https://www.instagram.com/pauls.technology\">instagram</a>");
+        			document.getElementById("message").innerHTML = res;
+
                 }
             }
 
