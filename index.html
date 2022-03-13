@@ -41,7 +41,7 @@
         left: 0;
         width: 20vw;
         height: 20vh;
-        text-align: center;
+        text-align: left;
     }
     /*A responsive mess*/
     @media only screen and (max-width: 600px) {
@@ -74,7 +74,7 @@
             var i = 0;
             function message(){
                 var out=document.getElementById("message");
-                var msg =  "Hello! you can find me here.\n\t\t       ├github.\n\t\t       ├twitter.\n\t\t       ├twitch.\n\t\t       └instagram. \n\n\n   more is to come!";
+                var msg = "Hello! you can find me here:\n\n- github.\n- twitter.\n- twitch.\n- instagram.\n\n\nmore is to come!";
             
                     if (i <= msg.length) {
                         out.innerHTML+=msg.charAt(i);
