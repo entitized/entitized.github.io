@@ -1,9 +1,88 @@
+<html>
+    <head>
+        <title>pauls.tech</title>
+        <meta name="title" content="pauls.tech">
+        <meta name="description" content="website by paul">
 
-<style>
-	html{
-		background-color:black; 
-		color:white;
-		font-family:monospace;
-		}
-</style>
-<center><h1>work in progress.</h1></center>
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.pauls.tech">
+        <meta property="og:title" content="pauls.tech">
+        <meta property="og:description" content="website by paul">
+       <!-- <meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=">-->
+
+        <meta property="twitter:card" content="yes">
+        <meta property="twitter:url" content="pauls.tech">
+        <meta property="twitter:title" content="pauls.tech">
+        <meta property="twitter:description" content="website by paul">
+       <!--  <meta property="twitter:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=">-->
+    </head>
+    <style>
+    html{
+        margin:0px;
+        padding:0px;
+    }
+
+    body{
+        background: #000;
+        color: #FFF;
+        margin:0px;
+        padding:0px;
+        font-family: monospace;
+        font-size:4mm;
+    }
+    .main{
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 20vw;
+        height: 20vh;
+        text-align: center;
+    }
+    /*A responsive mess*/
+    @media only screen and (max-width: 600px) {
+        .main{
+            position: auto;
+            margin: auto;
+            top: auto;
+            right: auto;
+            bottom: auto;
+            left: auto;
+            width: auto;
+            height: auto;
+        }
+        pre {padding-left:2vw;}
+    }
+    a:link{
+        color: #a5a5a5;
+    }
+    a:visited{
+        color: #696969;
+    }
+    </style>
+    <body onload="message()">
+        <div class="main">
+            <div id="term">
+                <pre id="message"></pre>
+            </div>
+        </div>
+        <script>
+            var i = 0;
+            function message(){
+                var out=document.getElementById("message");
+                var msg = "work in progress";
+            
+                    if (i <= msg.length) {
+                        out.innerHTML+=msg.charAt(i);
+                        i++;
+                        setTimeout(message, 70);
+                    }else{
+                    document.getElementById("message").innerHTML = res;
+                }
+            }
+
+        </script>
+    </body>
+</html>
