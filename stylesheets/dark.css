@@ -1,0 +1,8 @@
+body{
+	color:#FFF;
+	background-color: #000;
+}
+header img{
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+}
