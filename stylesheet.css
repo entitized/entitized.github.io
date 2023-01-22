@@ -1,0 +1,33 @@
+@font-face {
+	font-family: "ibmvga";
+	src: url("fonts/WebPlus_IBM_VGA_8x16.woff") format('woff');
+}
+
+
+
+* {
+	margin:5px;
+	padding:5px;
+	color: #fff;
+	font-family: ibmvga,monospace !important;
+	line-height: 99%;}
+	
+html {
+	background-color: #000;
+	font-size: 20pt;
+	overflow-x: hidden;
+}
+
+
+pre { display: inline; }
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:link:hover { text-decoration: none;
+color: #818181
+}
+
+a:active { text-decoration: none; }
+
