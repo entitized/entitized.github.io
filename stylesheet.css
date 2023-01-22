@@ -20,20 +20,13 @@ pre {
 	 display: inline; 
 	}
 
-a:link { 
-	text-decoration: none; 
+
+a {text-decoration: none;}
+
+a:hover {
+	color:#6c6c6c
 }
 
 a:visited {
 	color:#fff
 }
-
-a:link:hover { 
-	color: #818181
-}
-a:visited:hover {
-	color: #818181
-}
-
-a:active { text-decoration: none; }
-
