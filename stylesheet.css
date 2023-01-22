@@ -31,6 +31,9 @@ a:visited {
 a:link:hover { 
 	color: #818181
 }
+a:visited:hover {
+	color: #818181
+}
 
 a:active { text-decoration: none; }
 
