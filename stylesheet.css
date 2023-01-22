@@ -3,8 +3,6 @@
 	src: url("fonts/WebPlus_IBM_VGA_8x16.woff") format('woff');
 }
 
-
-
 * {
 	margin:5px;
 	padding:5px;
@@ -18,15 +16,20 @@ html {
 	overflow-x: hidden;
 }
 
+pre {
+	 display: inline; 
+	}
 
-pre { display: inline; }
+a:link { 
+	text-decoration: none; 
+}
 
-a:link { text-decoration: none; }
+a:visited {
+	color:#fff
+}
 
-a:visited { text-decoration: none; }
-
-a:link:hover { text-decoration: none;
-color: #818181
+a:link:hover { 
+	color: #818181
 }
 
 a:active { text-decoration: none; }
